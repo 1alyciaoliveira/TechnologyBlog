@@ -1,0 +1,14 @@
+[
+    {
+        "title": "This is a title",
+        "content": "This is the content of the post",
+        "author": "John Doe",
+        "date": "2019-01-01T00:00:00.000Z"
+    },
+    {
+        "title": "This is another title",
+        "content": "This is the content of the post",
+        "author": "Jane Doe",
+        "date": "2019-01-01T00:00:00.000Z"
+    }
+]

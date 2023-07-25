@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seeds/seed.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.5.2",
     "nodemon": "^3.0.1",
+    "seed": "^0.4.4",
     "sequelize": "^6.32.1"
   }
 }
