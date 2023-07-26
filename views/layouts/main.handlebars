@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+<!--  <link rel="stylesheet" href="/css/modal.css"> -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar is-flex" style="background-color: rgba(255, 255, 255, 0);">
+      <div class="navbar-brand">
+        <p class="title" style="text-transform:uppercase;">
+          Tech Blog.
+        </p>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            {{#if logged_in}}
+                <button class="button" id="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+            {{else}}
+                <a href="/" id="home">Home</a>
+                <a href="/dashboard" id="dashboard">Dashboard</a>
+                <a href="/login" id="login">Login</a>
+            {{/if}}
+           
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="container container-fluid mt-5">
+    <!-- Render the sub layout -->
+    {{{ body }}}
+  </main>
+  <footer>
+    <p class="has-text-centered">Tech Blog.</p>
+  </footer>
+  </div>
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+
+
+
+  <script src="https://kit.fontawesome.com/51d0cae634.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
